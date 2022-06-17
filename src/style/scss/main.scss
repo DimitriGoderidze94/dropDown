@@ -1,0 +1,73 @@
+$gray-color: rgb(24, 20, 20);
+$search-width: 200px;
+
+
+.listCityNames:hover {
+    background-color: $gray-color;
+}
+
+* {
+    text-align: center;
+    color: rgb(58, 52, 52);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+    width: $search-width;
+    margin: auto;
+    position: relative;
+}
+
+#search {
+    background-color: $gray-color;
+    width: $search-width;
+    margin: 20px 0 20px 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#city {
+    display: inline-block;
+    width: $search-width- 60px;
+    height: 30px;
+    background-color: $gray-color;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+#angle {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 8px;
+    height: 100%;
+}
+
+.listCityNames:hover {
+    background-color: rgb(150, 149, 149);
+
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+#dropDown {
+    border-radius: 5px;
+    background-color: rgb(240, 236, 236);
+    width: $search-width;
+    max-height: 200px;
+    overflow: auto;
+    position: absolute;
+}
+
+
+
+.selected {
+    background-color: rgb(204, 202, 202);
+}

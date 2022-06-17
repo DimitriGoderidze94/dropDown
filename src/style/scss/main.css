@@ -1,0 +1,66 @@
+.listCityNames:hover {
+  background-color: #f0ecec;
+}
+
+* {
+  text-align: center;
+  color: #3a3434;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+  width: 200px;
+  margin: auto;
+  position: relative;
+}
+
+#search {
+  background-color: #f0ecec;
+  width: 200px;
+  margin: 20px 0 20px 0;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#city {
+  display: inline-block;
+  width: 140px;
+  height: 30px;
+  background-color: #f0ecec;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+#angle {
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 8px;
+  height: 100%;
+}
+
+.listCityNames:hover {
+  background-color: #969595;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#dropDown {
+  border-radius: 5px;
+  background-color: #f0ecec;
+  width: 200px;
+  max-height: 200px;
+  overflow: auto;
+  position: absolute;
+}
+
+.selected {
+  background-color: #cccaca;
+}
+/*# sourceMappingURL=main.css.map */
