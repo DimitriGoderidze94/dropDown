@@ -1,73 +1,77 @@
-$gray-color: rgb(24, 20, 20);
+$gray-color: rgb(228, 226, 226);
+$darGray-color: rgb(202, 199, 199);
 $search-width: 200px;
-
+$textDarkRedShadow: 0 0 2px rgb(92, 38, 38), 0 0 30px rgb(92, 38, 38),
+  0px 0px 5px rgb(92, 38, 38), 0 0 150px rgb(92, 38, 38);
+$list-height: 200px;
 
 .listCityNames:hover {
-    background-color: $gray-color;
+  background-color: $gray-color;
 }
 
 * {
-    text-align: center;
-    color: rgb(58, 52, 52);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #container {
-    width: $search-width;
-    margin: auto;
-    position: relative;
+  position: absolute;
+  right: 0;
+  width: $search-width;
+  margin-right: 20px;
 }
 
 #search {
-    background-color: $gray-color;
-    width: $search-width;
-    margin: 20px 0 20px 0;
-    height: 30px;
-    border-radius: 5px;
+  background-color: $gray-color;
+  width: $search-width;
+  margin: 20px 0 20px 0;
+  height: 30px;
+  border-radius: 5px;
 }
 
 #city {
-    display: inline-block;
-    width: $search-width- 60px;
-    height: 30px;
-    background-color: $gray-color;
-    border: none;
-    overflow: auto;
-    outline: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    resize: none;
+  display: inline-block;
+  width: $search-width - 60px;
+  height: 30px;
+  background-color: $gray-color;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  text-shadow: $textDarkRedShadow;
+  color: white;
 }
 
 #angle {
-    vertical-align: top;
-    display: inline-block;
-    padding-top: 8px;
-    height: 100%;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 8px;
+  height: 100%;
 }
 
 .listCityNames:hover {
-    background-color: rgb(150, 149, 149);
-
+  border: 1px solid black;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+  width: 0;
+  background: transparent;
 }
 
 #dropDown {
-    border-radius: 5px;
-    background-color: rgb(240, 236, 236);
-    width: $search-width;
-    max-height: 200px;
-    overflow: auto;
-    position: absolute;
+  border-radius: 5px;
+  background-color: $gray-color;
+  width: $search-width;
+  max-height: $list-height;
+  overflow: auto;
+  position: absolute;
 }
 
-
-
 .selected {
-    background-color: rgb(204, 202, 202);
+  color: white;
+  background-color: $darGray-color;
+  text-shadow: $textDarkRedShadow;
 }

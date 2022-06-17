@@ -8,7 +8,6 @@ let container = document.getElementById("container");
 
 
 
-
 function showFullList() {
     if (angle.className == "fa-solid fa-angle-down") {
         angle.className = "fa-solid fa-angle-up"
@@ -32,7 +31,7 @@ function showFullList() {
             dropDown.appendChild(newButton);
         });
 
-        angle.className = "fa-solid fa-angle-down"
+        angle.className = "fa-solid fa-angle-down";
     }
 
 }
@@ -40,6 +39,7 @@ function showFullList() {
 
 
 function typeHead() {
+    angle.className = "fa-solid fa-angle-down";
     dropDown.innerHTML = "";
     const filtered = list.filter(
         (city) =>

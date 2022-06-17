@@ -1,21 +1,21 @@
 .listCityNames:hover {
-  background-color: #f0ecec;
+  background-color: #e4e2e2;
 }
 
 * {
   text-align: center;
-  color: #3a3434;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #container {
+  position: absolute;
+  right: 0;
   width: 200px;
-  margin: auto;
-  position: relative;
+  margin-right: 20px;
 }
 
 #search {
-  background-color: #f0ecec;
+  background-color: #e4e2e2;
   width: 200px;
   margin: 20px 0 20px 0;
   height: 30px;
@@ -26,13 +26,15 @@
   display: inline-block;
   width: 140px;
   height: 30px;
-  background-color: #f0ecec;
+  background-color: #e4e2e2;
   border: none;
   overflow: auto;
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   resize: none;
+  text-shadow: 0 0 2px #5c2626, 0 0 30px #5c2626, 0px 0px 5px #5c2626, 0 0 150px #5c2626;
+  color: white;
 }
 
 #angle {
@@ -43,7 +45,7 @@
 }
 
 .listCityNames:hover {
-  background-color: #969595;
+  border: 1px solid black;
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +55,7 @@
 
 #dropDown {
   border-radius: 5px;
-  background-color: #f0ecec;
+  background-color: #e4e2e2;
   width: 200px;
   max-height: 200px;
   overflow: auto;
@@ -61,6 +63,8 @@
 }
 
 .selected {
-  background-color: #cccaca;
+  color: white;
+  background-color: #cac7c7;
+  text-shadow: 0 0 2px #5c2626, 0 0 30px #5c2626, 0px 0px 5px #5c2626, 0 0 150px #5c2626;
 }
 /*# sourceMappingURL=main.css.map */
