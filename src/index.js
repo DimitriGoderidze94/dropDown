@@ -34,7 +34,7 @@ function showFullList() {
 
         angle.className = "fa-solid fa-angle-down"
     }
-    console.log("full")
+
 }
 
 
